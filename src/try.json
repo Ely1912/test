@@ -2,32 +2,130 @@
   "try":[
     {
       "id": 1,
-      "firstlevel": "Inicio",
+      "firstlevel": {
+        "menu": "Inicio",
+        "enlace": "./#home"
+      },
       "secondlevel": null
     },
     {
       "id":2,
       "firstlevel": "Creatividad y diseño",
-      "secondlevel": ["Mis proyectos", "Fotografía","Soluciones empresariales", "Videos","Diseño gráfico"]
-     },
+      "secondlevel": [
+        {
+          "subMenu" : "Mis proyectos",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Fotografía",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Soluciones empresariales",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Videos",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Diseño gráfico",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        }
+              
+      ]
+    },
     {
       "id":3,
       "firstlevel": "Soluciones IT",
-      "secondlevel": ["Desarrollo de APIS", "Android","IOS", "Soluciones para pequeñas empresas","Soluciones para grandes empresas"]
+      "secondlevel": [
+        {
+          "subMenu" : "Desarrollo de APIS",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Android",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "IOS",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Soluciones para pequeñas empresas",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Soluciones para grandes empresas",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        }
+              
+      ]
     },
     {
       "id":4,
       "firstlevel": "Asistencia",
-      "secondlevel": ["Contacta con nosotros", "Comunidad interna","Calidades y servicios"]
+      "secondlevel": [
+        {
+          "subMenu" : "Contacta con nosotros",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Comunidad interna",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Calidades y servicios",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        }     
+      ]
     },
     {
       "id":5,
       "firstlevel": "Partners",
-      "secondlevel": ["Sé partner", "Nuestros productos","Implantaciones en clientes","Otras implantaciones"]
+      "secondlevel": [
+        {
+          "subMenu" : "Sé partner",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Nuestros productos",
+          "enlace" : "javascript:void(0)",
+          "target": "_self"
+        },
+        {
+          "subMenu" : "Implantaciones en clientes",
+          "enlace" : "javascript:void(0)",
+          "target": "_blank"
+        },
+        {
+          "subMenu" : "Otras implantaciones",
+          "enlace" : "javascript:void(0)",
+          "target": "_blank"
+        }
+              
+      ]
     },
     {
       "id": 6,
-      "firstlevel": "Novedades",
+      "firstlevel": {
+        "menu": "Novedades",
+        "enlace": ""
+      },
       "secondlevel": null
     }
   ]

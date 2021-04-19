@@ -45,14 +45,14 @@ function Header(props) {
         {props.menu.map((cont, item) =>
       {if (cont.secondLevel==null) 
       {return  <Nav.Item>
-        <Nav.Link eventKey={item} href="#/home">
-         {cont.firstLevel}
+        <Nav.Link eventKey={item} href={cont.firstLevel.enlace}>
+         {cont.firstLevel.menu}
         </Nav.Link>
       </Nav.Item>;}
       return (
       <NavDropdown title={cont.firstLevel} id={item} show={(elementId===item)&&(show)} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
         {cont.secondLevel.map((subcont, itemSub) =>
-        <NavDropdown.Item href="https://www.w3schools.com/default.asp" alt={subcont} target="_self" eventKey={`${item}.${itemSub}`}>{subcont}</NavDropdown.Item>
+        <NavDropdown.Item href={subcont.enlace} alt={subcont.subMenu} target={subcont.target} id={`${item}.${itemSub}`}>{subcont.subMenu}</NavDropdown.Item>
         )}
         </NavDropdown>
       )

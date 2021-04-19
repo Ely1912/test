@@ -18,7 +18,7 @@ function CarruselComponent(props) {
       className="d-block w-100"
       src={cont.imageUrl}
       alt="First slide"
-      style={{height:'50vh'}}
+      style={{height:'60vh'}}
     />
     <Carousel.Caption >
       <h2>{cont.imageTitle}</h2>

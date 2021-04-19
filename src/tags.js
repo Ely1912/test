@@ -22,10 +22,10 @@ const onKey=(event)=>{
   
 return(
   <div style={{margin:'2%'}}>
-  <Button variant="success" onClick={handleShow}>Ingresar nueva Tag</Button>
+  <Button variant="success" onClick={handleShow}>Añadir Tag</Button>
   <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Añadir Tag</Modal.Title>
+          <Modal.Title>Ingresar nueva Tag</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <input type="text" onChange={onKey} style={{width:'100%'}}></input>

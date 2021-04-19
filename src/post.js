@@ -12,6 +12,7 @@ import React, { useState, useEffect } from 'react';
 
  function Post () {
   const [data, setData] = useState( [] );
+  const [disable, setDisable] = useState( false );
  
   const fetchData = async (start, limit) => {
     try{
@@ -36,7 +37,7 @@ import React, { useState, useEffect } from 'react';
 const handleClick= ()=>{
  console.log("was clicked");
     fetchData(4, 4);
-   
+  setDisable(true);
 }
    
     return (
@@ -59,7 +60,7 @@ const handleClick= ()=>{
      
      </CardGroup>  
        
-    <Button onClick={handleClick}>Mostrar mas</Button>
+    <Button disabled={disable} onClick={handleClick}>Mostrar mas</Button>
    
         </div>
       
